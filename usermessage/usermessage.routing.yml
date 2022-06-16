@@ -1,0 +1,8 @@
+usermessage.subscrForm_form:
+  path: '/admin/config/message-settings'
+  defaults:
+    _form: 'Drupal\usermessage\Form\welcomeForm'
+    _title: 'Welcome user form'
+  requirements:
+    _role: 'authenticated'
+    

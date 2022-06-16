@@ -1,0 +1,34 @@
+<?php
+use Drupal\Core\Database\Database;
+ 
+/**
+ * Implements hook_schema().
+ */
+function usermessage_schema(){
+    $schema['usermessage'] = array(
+        'description' => 'The table for storing custom user data.',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'uid' => array(
+                'description' => 'User Identifier',
+        	 'type' => 'int',
+                'length' => 20,
+                'not null' => TRUE,              
+            ),            
+            'text' => array(
+                'description' => 'Welcome text',
+                'type' => 'text',
+                'size' => 'big',
+                'not null' => TRUE,
+                'default' => '',
+            ),           
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}

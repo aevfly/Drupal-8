@@ -1,0 +1,6 @@
+clonenode:
+    path: '/node/{id}/clone'
+    defaults:
+        _controller: '\Drupal\clonenode\Controller\CloneController::clone'
+    requirements:
+        _permission: 'access content'

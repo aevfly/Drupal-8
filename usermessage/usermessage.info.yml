@@ -1,0 +1,5 @@
+name: 'Welcome text for user' 
+type: module
+description: 'Add form for users to fill with a welocome text'
+core_version_requirement: ^8 || ^9  
+package: Custom

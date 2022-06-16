@@ -1,0 +1,5 @@
+name: 'Clone Node'
+description: 'Creates clone of node.'
+type: module
+core_version_requirement: ^8 || ^9  
+package: Custom

@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Contains clonenode.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Declares entity operations.
+ *
+ * @param \Drupal\Core\Entity\EntityInterface $entity
+ *   The entity on which the linked operations will be performed.
+ *
+ * @return array
+ *   An operations array as returned
+ *
+ * @see \Drupal\Core\Entity\EntityListBuilderInterface::getOperations()
+ */
+function clonenode_entity_operation(EntityInterface $entity){
+
+    $operations = [];
+
+    if ($entity instanceof \Drupal\node\Entity\Node) {
+        $operations['clone'] = [
+          'title' => t('Clone'),
+          'url' => \Drupal\Core\Url::fromRoute('clonenode',['id' => $entity->id()]),
+          'weight' => 50,
+        ];
+    }
+
+    return $operations;
+}

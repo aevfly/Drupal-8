@@ -1,0 +1,5 @@
+name: 'Change path'
+type: module
+description: 'Change path from /user/login to /global/login'
+package: Custom
+core_version_requirement: ^8 || ^9

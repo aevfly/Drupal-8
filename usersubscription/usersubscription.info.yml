@@ -1,0 +1,5 @@
+name: 'Subscription user role' 
+type: module
+description: 'Add role subscription to user'
+core_version_requirement: ^8 || ^9  
+package: Custom

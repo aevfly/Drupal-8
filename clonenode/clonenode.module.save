@@ -1,0 +1,13 @@
+Component/EventDispatcher/ContainerAwareEventDispatcher.php(142): call_user_func()
+#2 /var/www/html/web/modules/custom/usersubscription/src/Form/SubscriptionEventDispatchForm.php(57): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#3 [internal function]: Drupal\usersubscription\Form\SubscriptionEventDispatchForm->submitForm()
+#4 /var/www/html/web/core/lib/Drupal/Core/Form/FormSubmitter.php(114): call_user_func_array()
+#5 /var/www/html/web/core/lib/Drupal/Core/Form/FormSubmitter.php(52): Drupal\Core\Form\FormSubmitter->executeSubmitHandlers()
+#6 /var/www/html/web/core/lib/Drupal/Core/Form/FormBuilder.php(592): Drupal\Core\Form\FormSubmitter->doSubmitForm()
+#7 /var/www/html/web/core/lib/Drupal/Core/Form/FormBuilder.php(320): Drupal\Core\Form\FormBuilder->processForm()
+#8 /var/www/html/web/core/lib/Drupal/Core/Controller/FormController.php(73): Drupal\Core\Form\FormBuilder->buildForm()
+#9 [internal function]: Drupal\Core\Controller\FormController->getContentResult()
+#10 /var/www/html/web/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php(123): call_user_func_array()
+#11 /var/www/html/web/core/lib/Drupal/Core/Render/Renderer.php(564): Drupal\Core\EventSubscriber\EarlyRenderingControllerWrapperSubscriber->Drupal\Core\EventSubscriber\{closure}()
+#12 /var/www/html/web/core/lib/Drupal/Core/EventSubscriber/EarlyRenderingControllerWrapperSubscriber.php(124): Drupal\Core\Render\Renderer->executeInRenderContext()
+#13 /var/www/html/web/core/lib/Drupal/Core/EventSubs

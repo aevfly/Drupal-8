@@ -1,0 +1,15 @@
+usersubscription.subscrForm_form:
+  path: '/user/subscription'
+  defaults:
+    _form: 'Drupal\usersubscription\Form\subscrForm'
+    _title: 'Subscription user form'
+  requirements:
+    _permission: 'access content'
+    
+usersubscription.subscr_event_dispatcher_form:
+  path: 'subscr-event-dispatch-form'
+  defaults:
+    _form: '\Drupal\usersubscription\Form\SubscriptionEventDispatchForm'
+    _title: 'Event Dispatcher Form'
+  requirements:
+    _permission: 'access administration pages'    
